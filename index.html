@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TikTok Thots</title>
+  <title>Mon site de vidéos courtes</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -41,14 +41,20 @@
 <body>
 
   <header>
-    <h1>TikTok Thots</h1>
+    <h1>Mon site de vidéos courtes</h1>
     <p>Des vidéos captivantes à découvrir !</p>
   </header>
 
   <section class="video-container">
+    <!-- Vidéo locale depuis GitHub -->
     <div class="video-item">
-      <iframe src="https://www.youtube.com/embed/videoID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <video controls width="300" height="200">
+        <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/Heavenbbyy.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge la balise vidéo.
+      </video>
     </div>
+
+    <!-- Autre vidéo externe (par exemple, YouTube) -->
     <div class="video-item">
       <iframe src="https://www.youtube.com/embed/videoID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -56,7 +62,7 @@
   </section>
 
   <footer>
-    <p>© 2024 TikTok Thots</p>
+    <p>© 2024 Mon site de vidéos courtes</p>
   </footer>
 
 </body>
