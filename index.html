@@ -15,7 +15,7 @@
     header {
       text-align: center;
       padding: 50px 0;
-      background-color: #ff3d3d;
+      background-color: #ff6f61; /* Couleur rouge doux */
       color: white;
       font-size: 2.5em;
     }
@@ -63,7 +63,7 @@
   <section class="video-container">
     <!-- Vidéo Heavenbbyy -->
     <div class="video-item">
-      <video controls>
+      <video id="video1" controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/Heavenbbyy.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -71,7 +71,7 @@
 
     <!-- Vidéo andreamerccc -->
     <div class="video-item">
-      <video controls>
+      <video id="video2" controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/andreamerccc.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -79,7 +79,7 @@
 
     <!-- Vidéo f1or.a -->
     <div class="video-item">
-      <video controls>
+      <video id="video3" controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/f1or.a.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -87,7 +87,7 @@
 
     <!-- Vidéo Christabearr -->
     <div class="video-item">
-      <video controls>
+      <video id="video4" controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/Christabearr.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -95,7 +95,7 @@
 
     <!-- Vidéo Nuryforero -->
     <div class="video-item">
-      <video controls>
+      <video id="video5" controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/Nuryforero.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -103,7 +103,7 @@
 
     <!-- Vidéo Silvisaab_7074207512672603397 -->
     <div class="video-item">
-      <video controls>
+      <video id="video6" controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/Silvisaab_7074207512672603397.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -111,7 +111,7 @@
 
     <!-- Vidéo frankfurtikis -->
     <div class="video-item">
-      <video controls>
+      <video id="video7" controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/frankfurtikis.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -119,7 +119,7 @@
 
     <!-- Vidéo itsgabyvip -->
     <div class="video-item">
-      <video controls>
+      <video id="video8" controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/itsgabyvip.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -127,7 +127,7 @@
 
     <!-- Vidéo karentahee -->
     <div class="video-item">
-      <video controls>
+      <video id="video9" controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/karentahee.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -135,7 +135,7 @@
 
     <!-- Vidéo lu2hott -->
     <div class="video-item">
-      <video controls>
+      <video id="video10" controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/lu2hott.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -143,7 +143,7 @@
 
     <!-- Vidéo thelilly.kait -->
     <div class="video-item">
-      <video controls>
+      <video id="video11" controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/thelilly.kait.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -153,6 +153,19 @@
   <footer>
     <p>© 2025 HOT TIKTOK VIDEOS</p>
   </footer>
+
+  <script>
+    // Fonction pour démarrer la vidéo au survol du curseur
+    document.querySelectorAll('video').forEach((video) => {
+      video.addEventListener('mouseover', () => {
+        video.play();
+      });
+      video.addEventListener('mouseout', () => {
+        video.pause();
+        video.currentTime = 0;  // Remet la vidéo au début après l'arrêt
+      });
+    });
+  </script>
 
 </body>
 </html>
