@@ -9,46 +9,61 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: white;
-      color: black;
+      background-color: #f9f9f9;
+      color: #333;
     }
     header {
       text-align: center;
       padding: 50px 0;
+      background-color: #ff3d3d;
+      color: white;
+      font-size: 2.5em;
     }
     .video-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
     .video-item {
-      width: 300px;
-      height: 200px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    iframe {
+    .video-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+    video {
       width: 100%;
       height: 100%;
+      border-radius: 15px;
+      object-fit: cover;
     }
     footer {
       text-align: center;
       padding: 30px 0;
       background-color: #f4f4f4;
     }
+    p {
+      font-size: 1.2em;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>HOT TIKTOK VIDEOS</h1>
-    <p>Des vidéos captivantes à découvrir !</p>
+    HOT TIKTOK VIDEOS
   </header>
 
   <section class="video-container">
     <!-- Vidéo Heavenbbyy -->
     <div class="video-item">
-      <video controls width="300" height="200">
+      <video controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/Heavenbbyy.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -56,7 +71,7 @@
 
     <!-- Vidéo andreamerccc -->
     <div class="video-item">
-      <video controls width="300" height="200">
+      <video controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/andreamerccc.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -64,7 +79,7 @@
 
     <!-- Vidéo f1or.a -->
     <div class="video-item">
-      <video controls width="300" height="200">
+      <video controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/f1or.a.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -72,7 +87,7 @@
 
     <!-- Vidéo Christabearr -->
     <div class="video-item">
-      <video controls width="300" height="200">
+      <video controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/Christabearr.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -80,7 +95,7 @@
 
     <!-- Vidéo Nuryforero -->
     <div class="video-item">
-      <video controls width="300" height="200">
+      <video controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/Nuryforero.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -88,7 +103,7 @@
 
     <!-- Vidéo Silvisaab_7074207512672603397 -->
     <div class="video-item">
-      <video controls width="300" height="200">
+      <video controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/Silvisaab_7074207512672603397.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -96,7 +111,7 @@
 
     <!-- Vidéo frankfurtikis -->
     <div class="video-item">
-      <video controls width="300" height="200">
+      <video controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/frankfurtikis.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -104,7 +119,7 @@
 
     <!-- Vidéo itsgabyvip -->
     <div class="video-item">
-      <video controls width="300" height="200">
+      <video controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/itsgabyvip.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -112,7 +127,7 @@
 
     <!-- Vidéo karentahee -->
     <div class="video-item">
-      <video controls width="300" height="200">
+      <video controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/karentahee.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -120,7 +135,7 @@
 
     <!-- Vidéo lu2hott -->
     <div class="video-item">
-      <video controls width="300" height="200">
+      <video controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/lu2hott.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
@@ -128,7 +143,7 @@
 
     <!-- Vidéo thelilly.kait -->
     <div class="video-item">
-      <video controls width="300" height="200">
+      <video controls>
         <source src="https://raw.githubusercontent.com/TiktokGOF/TikTokThots/main/videos/thelilly.kait.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
